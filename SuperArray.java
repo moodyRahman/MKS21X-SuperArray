@@ -8,4 +8,24 @@ public class SuperArray{
     }
   }
 
+  SuperArray(){
+    arraystg = new String[10];
+  }
+
+  public void clear(){
+    arraystg = new String[0];
+  }
+
+  public boolean isEmpty(){
+    if (this.arraystg.length == 0){
+      return true;
+    }
+    return false;
+  }
+
+  public int size(){
+    return this.arraystg.length;
+  }
+
+  
 }
