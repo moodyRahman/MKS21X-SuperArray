@@ -84,4 +84,14 @@ public class SuperArray{
   }
 
   //phase 3
+
+  public boolean contains(String output){
+    for (int x = 0; x < size(); x++){
+      if (data[x] == output){
+        return true;
+      }
+    }
+    return false;
+  }
+
 }
