@@ -1,4 +1,6 @@
 public class SuperArray{
+
+  //phase 1
   private String[] data;
   private int size;
 
@@ -70,6 +72,8 @@ public class SuperArray{
     return output;
   }
 
+
+  //phase 2
   public void resize(){
     String[] output = new String[data.length * 2 + 1];
     for (int x = 0; x < size(); x++){
@@ -78,4 +82,6 @@ public class SuperArray{
 
     this.data = output;
   }
+
+  //phase 3
 }
