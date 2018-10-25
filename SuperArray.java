@@ -70,9 +70,9 @@ public class SuperArray{
   private void resize(){
     String[] output = new String[data.length + 1];
     for (int x = 0; x < size(); x++){
-      data[x] = output[x];
+      output[x] = data[x];
     }
 
-    data = output;
+    this.data = output;
   }
 }
