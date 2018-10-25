@@ -64,14 +64,22 @@ public class Driver{
     System.out.println(t);
     System.out.println("");
 
-
-    System.out.println("");
-    System.out.println("testing resize()");
-
     System.out.println("");
     System.out.println("testing isEmpty()");
     SuperArray d = new SuperArray();
     System.out.println(d.isEmpty());
     System.out.println(t.isEmpty());
+
+    System.out.println("");
+    System.out.println("testing add extender");
+    SuperArray s = new SuperArray();
+    for (int x = 0; x < 10; x++){
+      s.add("fools");
+    }
+    System.out.println(s);
+    System.out.println(s.size());
+    s.add("eric lin");
+    System.out.println(s);
+    System.out.println(s.size());
   }
 }
