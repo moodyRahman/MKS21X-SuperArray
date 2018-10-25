@@ -68,5 +68,10 @@ public class Driver{
     System.out.println("");
     System.out.println("testing resize()");
 
+    System.out.println("");
+    System.out.println("testing isEmpty()");
+    SuperArray d = new SuperArray();
+    System.out.println(d.isEmpty());
+    System.out.println(t.isEmpty());
   }
 }
