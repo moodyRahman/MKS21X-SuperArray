@@ -41,9 +41,9 @@ public class SuperArray{
   }
 
   public String toStringDebug(){
-    String output = ";";
+    String output = "";
     for (int x = 0; x < this.data.length; x++){
-      output += this.data[x];
+      output += this.data[x] + ", ";
     }
     return output;
   }

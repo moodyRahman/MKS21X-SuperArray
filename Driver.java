@@ -49,7 +49,6 @@ public class Driver{
     System.out.println(t);
     System.out.println("");
 
-
     System.out.println("adding skitty at 5; should throw error");
     t.set(5, "skitty");
     System.out.println(t);
@@ -64,5 +63,12 @@ public class Driver{
     t.set(4, "maneky");
     System.out.println(t);
     System.out.println("");
+
+
+    System.out.println("");
+    System.out.println("testing resize()");
+
+    System.out.println(t.toStringDebug());
+
   }
 }
