@@ -69,6 +69,10 @@ public class Driver{
     System.out.println("testing resize()");
 
     System.out.println(t.toStringDebug());
+    t.resize();
+    System.out.println(t.toStringDebug());
+    t.resize();
+    System.out.println(t.toStringDebug());
 
   }
 }
