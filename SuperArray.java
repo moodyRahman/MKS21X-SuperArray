@@ -6,6 +6,10 @@ public class SuperArray{
     data = new String[10];
   }
 
+  public void clear(){
+    size = 0;
+  }
+
   public int size(){
     int output = 0;
     for (int x = 0; x < this.data.length; x++){
@@ -25,6 +29,7 @@ public class SuperArray{
 
   public void add(String element){
     this.data[size] = element;
+    size++;
   }
 
   public String toString(){
