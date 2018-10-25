@@ -28,6 +28,9 @@ public class SuperArray{
   }
 
   public void add(String element){
+    if (size() == data.length) {
+      this.resize();
+    }
     this.data[size] = element;
     size++;
   }
