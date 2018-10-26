@@ -84,7 +84,6 @@ public class SuperArray{
   }
 
   //phase 3
-
   public boolean contains(String element){
     for (int x = 0; x < size(); x++){
       if (data[x] == element){
@@ -97,6 +96,15 @@ public class SuperArray{
   public int indexOf(String element){
     for (int x = 0; x < size(); x++){
       if (data[x] == element){
+        return x;
+      }
+    }
+    return -1;
+  }
+
+  public int LastIndexOf(String element){
+    for (int x = 1; x != size(); x++){
+      if (data[size() - x] == element){
         return x;
       }
     }
