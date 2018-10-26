@@ -67,8 +67,7 @@ public class SuperArray{
   public String set(int index, String element){
     String output;
     if (index < 0 || index >= size()){
-      System.out.println("INVALID SET CALL");
-      return null;
+      throw new ArrayIndexOutOfBoundsException();
     }
     output = data[index];
     data[index] = element;
