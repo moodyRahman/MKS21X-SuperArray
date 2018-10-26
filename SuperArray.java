@@ -115,10 +115,13 @@ public class SuperArray{
 
   public void add(int index, String element){
     String[] output = new String[size() + 1];
-    for(int x = index; x < size(); x++){
-      output[x + 1] = data[x];
+    for (int x = 0; x < index; x++){
+      output[x] = data[x];
     }
-
+    for (int x = index + 1; x < size(); x++){
+      output[x] = data[x - 1];
+    }
+    data[index] = element;
     data = output;
   }
 
