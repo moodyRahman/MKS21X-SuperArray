@@ -102,7 +102,13 @@ public class Driver{
     System.out.println(t.indexOf("cat"));
     System.out.println(t.indexOf("aaaaaaaa"));
     System.out.println(t.indexOf("naught"));
+
     System.out.println("");
     System.out.println("lastIndexOf testing");
+    System.out.println(t.lastIndexOf("cat"));
+    System.out.println(t.lastIndexOf("aaaaaaaa"));
+    System.out.println(t.lastIndexOf("healthfirst"));
+    System.out.println(t.lastIndexOf("frick"));
+    System.out.println(t.lastIndexOf("foop"));
   }
 }
