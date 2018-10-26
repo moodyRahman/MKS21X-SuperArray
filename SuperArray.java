@@ -12,9 +12,13 @@ public class SuperArray{
     size = 0;
   }
 
+  public int retSize(){
+    return size;
+  }
+
   public int size(){
     int output = 0;
-    for (int x = 0; x < this.data.length; x++){
+    for (int x = 0; x < size; x++){
       if (this.data[x] != null){
         output++;
       }
@@ -109,6 +113,15 @@ public class SuperArray{
       }
     }
     return -1;
+  }
+
+  public void add(int index, String element){
+    String[] output = new String[size() + 1];
+    for(int x = index; x < size(); x++){
+      output[x + 1] = data[x];
+    }
+
+    data = output;
   }
 
 }

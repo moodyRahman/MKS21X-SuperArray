@@ -85,6 +85,17 @@ public class Driver{
     System.out.println(s);
     System.out.println(s.size());
 
+    System.out.println("---------------");
+    s.clear();
+    System.out.println(s.size());
+    System.out.println(s.retSize());
+    System.out.println(s);
+
+    s.add("wack");
+    System.out.println(s);
+
+    System.out.println("---------------");
+
     System.out.println("");
     System.out.println("testing indexOf");
     t.add("cat");
@@ -110,5 +121,11 @@ public class Driver{
     System.out.println(t.lastIndexOf("healthfirst"));
     System.out.println(t.lastIndexOf("frick"));
     System.out.println(t.lastIndexOf("foop"));
+
+    System.out.println("");
+    System.out.println("testing advanced add");
+    System.out.println(t.toStringDebug());
+    t.add(2, "aaa");
+    System.out.println(t.toStringDebug());
   }
 }
