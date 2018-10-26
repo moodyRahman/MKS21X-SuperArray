@@ -17,6 +17,8 @@ public class Driver{
     System.out.println("obj t and its size");
     System.out.println(t);
     System.out.println(t.size());
+
+    System.out.println("");
     System.out.println("testing get");
 
     System.out.print("at 0: ");
@@ -31,11 +33,11 @@ public class Driver{
     System.out.print("at 3: ");
     System.out.println(t.get(3));
 
-    System.out.print("at 4: ");
-    System.out.println(t.get(4));
+    //System.out.print("at 4: ");
+    //System.out.println(t.get(4));
 
-    System.out.println(t.get(6));
-    System.out.print("at 6: ");
+    //System.out.println(t.get(99));
+    //System.out.print("at 6: ");
 
     System.out.println("");
     System.out.println("");
