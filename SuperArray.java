@@ -102,10 +102,10 @@ public class SuperArray{
     return -1;
   }
 
-  public int LastIndexOf(String element){
-    for (int x = 1; x != size(); x++){
+  public int lastIndexOf(String element){
+    for (int x = 1; x - size() != 1; x++){
       if (data[size() - x] == element){
-        return x;
+        return size() - x;
       }
     }
     return -1;
