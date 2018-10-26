@@ -127,7 +127,25 @@ public class Driver{
     System.out.println("");
     System.out.println("testing advanced add");
     System.out.println(t.toStringDebug());
+    System.out.println(t.size());
     t.add(2, "aaa");
     System.out.println(t.toStringDebug());
+    System.out.println(t.size());
+
+    System.out.println("");
+    System.out.println("testing remove");
+    System.out.println(t.toStringDebug());
+    System.out.println(t.size());
+    t.remove(2);
+    System.out.println(t.toStringDebug());
+    System.out.println(t.size());
+    t.remove(2);
+    System.out.println(t.toStringDebug());
+    System.out.println(t.size());
+
+    System.out.println("");
+    System.out.println("testing remove(string)");
+    t.remove("frick");
+    System.out.println(t);
   }
 }

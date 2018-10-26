@@ -123,6 +123,23 @@ public class SuperArray{
     }
     output[index] = element;
     data = output;
+    size++;
+  }
+
+  public void remove(int index){
+    String[] output = new String[size() + 3];
+    for (int x = 0; x < index; x++){       //copies data to output until index
+      output[x] = data[x];
+    }
+    for (int x = index; x < size(); x++){
+      output[x] = data[x + 1];
+    }
+    data = output;
+  }
+
+  public void remove(String element){
+    int idx = indexOf(element);
+    remove(idx);
   }
 
 }
