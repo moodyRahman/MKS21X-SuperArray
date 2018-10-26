@@ -74,7 +74,7 @@ public class Driver{
     System.out.println("testing add extender");
     SuperArray s = new SuperArray();
     for (int x = 0; x < 10; x++){
-      s.add("fools");
+      s.add("foop");
     }
     System.out.println(s);
     System.out.println(s.size());
