@@ -114,14 +114,14 @@ public class SuperArray{
   }
 
   public void add(int index, String element){
-    String[] output = new String[size() + 1];
-    for (int x = 0; x < index; x++){
+    String[] output = new String[size() + 3];
+    for (int x = 0; x < index; x++){       //copies data to output until index
       output[x] = data[x];
     }
-    for (int x = index + 1; x < size(); x++){
-      output[x] = data[x - 1];
+    for (int x = index; x < size(); x++){  //copies remaining data to output
+      output[x + 1] = data[x];             //leaves one space for element
     }
-    data[index] = element;
+    output[index] = element;
     data = output;
   }
 

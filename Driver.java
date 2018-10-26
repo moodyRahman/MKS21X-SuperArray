@@ -51,20 +51,20 @@ public class Driver{
     System.out.println(t);
     System.out.println("");
 
-    System.out.println("adding skitty at 5; should throw error");
-    t.set(5, "skitty");
-    System.out.println(t);
-    System.out.println("");
+    //System.out.println("adding skitty at 5; should throw error");
+    //t.set(5, "skitty");
+    //System.out.println(t);
+    //System.out.println("");
 
     System.out.println("adding pikapika at 3");
     t.set(3, "pikapika");
     System.out.println(t);
     System.out.println("");
 
-    System.out.println("adding maneky at 4");
-    t.set(4, "maneky");
-    System.out.println(t);
-    System.out.println("");
+    //System.out.println("adding maneky at 4");
+    //t.set(4, "maneky");
+    //System.out.println(t);
+    //System.out.println("");
 
     System.out.println("");
     System.out.println("testing isEmpty()");
