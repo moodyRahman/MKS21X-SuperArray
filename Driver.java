@@ -81,5 +81,28 @@ public class Driver{
     s.add("eric lin");
     System.out.println(s);
     System.out.println(s.size());
+    s.add("roosevelt");
+    System.out.println(s);
+    System.out.println(s.size());
+
+    System.out.println("");
+    System.out.println("testing indexOf");
+    t.add("cat");
+    t.add("foop");
+    t.add("bat");
+    t.add("qwe");
+    t.add("iop");
+    t.add("naught");
+    t.add("healthfirst");
+    t.set(0, "cat");
+    System.out.println(t);
+    System.out.println(t.indexOf("cat"));
+    t.set(0, "frick");
+    System.out.println(t);
+    System.out.println(t.indexOf("cat"));
+    System.out.println(t.indexOf("aaaaaaaa"));
+    System.out.println(t.indexOf("naught"));
+    System.out.println("");
+    System.out.println("lastIndexOf testing");
   }
 }
