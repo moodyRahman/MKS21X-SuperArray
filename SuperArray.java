@@ -85,13 +85,22 @@ public class SuperArray{
 
   //phase 3
 
-  public boolean contains(String output){
+  public boolean contains(String element){
     for (int x = 0; x < size(); x++){
-      if (data[x] == output){
+      if (data[x] == element){
         return true;
       }
     }
     return false;
+  }
+
+  public int indexOf(String element){
+    for (int x = 0; x < size(); x++){
+      if (data[x] == element){
+        return x;
+      }
+    }
+    return -1;
   }
 
 }
