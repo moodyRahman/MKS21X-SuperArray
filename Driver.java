@@ -99,7 +99,7 @@ public static void main(String[] args) {
         System.out.println("---------------");
         s.clear();
         System.out.println(s.size());
-        System.out.println(s.retSize());
+        System.out.println(s.size());
         System.out.println(s);
 
         s.add("wack");
