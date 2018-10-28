@@ -8,6 +8,10 @@ SuperArray(){
         data = new String[10];
 }
 
+SuperArray(int startCap){
+        data = new String[startCap];
+}
+
 public void clear(){
         size = 0;
 }
