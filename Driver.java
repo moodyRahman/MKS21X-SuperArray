@@ -51,20 +51,29 @@ public static void main(String[] args) {
         System.out.println(t);
         System.out.println("");
 
-        //System.out.println("adding skitty at 5; should throw error");
-        //t.set(5, "skitty");
-        //System.out.println(t);
-        //System.out.println("");
+        try{
+                System.out.println("adding skitty at 5; should throw error");
+                t.set(5, "skitty");
+                System.out.println(t);
+                System.out.println("");
+        }catch (ArrayIndexOutOfBoundsException e) {
+                System.out.println("error caught!");
+        }
 
         System.out.println("adding pikapika at 3");
         t.set(3, "pikapika");
         System.out.println(t);
         System.out.println("");
 
-        //System.out.println("adding maneky at 4");
-        //t.set(4, "maneky");
-        //System.out.println(t);
-        //System.out.println("");
+
+        try{
+        System.out.println("adding maneky at 4");
+        t.set(4, "maneky");
+        System.out.println(t);
+        System.out.println("");
+    } catch (ArrayIndexOutOfBoundsException e){
+        System.out.println("error caught!");
+    }
 
         System.out.println("");
         System.out.println("testing isEmpty()");
