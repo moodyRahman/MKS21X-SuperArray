@@ -33,12 +33,20 @@ public static void main(String[] args) {
         System.out.print("at 3: ");
         System.out.println(t.get(3));
 
-        //System.out.print("at 4: ");
-        //System.out.println(t.get(4));
+        System.out.println("should throw errors");
+        try{
+        System.out.print("at 4: ");
+        System.out.println(t.get(4));
+    } catch(IndexOutOfBoundsException e){
+        System.out.println("error caught!");
+    }
 
-        //System.out.println(t.get(99));
-        //System.out.print("at 6: ");
-
+        try{
+        System.out.println(t.get(99));
+        System.out.print("at 6: ");
+    } catch(IndexOutOfBoundsException e){
+        System.out.println("error caught!");
+    }
         System.out.println("");
         System.out.println("");
 
@@ -56,7 +64,7 @@ public static void main(String[] args) {
                 t.set(5, "skitty");
                 System.out.println(t);
                 System.out.println("");
-        }catch (ArrayIndexOutOfBoundsException e) {
+        }catch (IndexOutOfBoundsException e) {
                 System.out.println("error caught!");
         }
 
@@ -68,10 +76,11 @@ public static void main(String[] args) {
 
         try{
         System.out.println("adding maneky at 4");
+        System.out.println("should throw error");
         t.set(4, "maneky");
         System.out.println(t);
         System.out.println("");
-    } catch (ArrayIndexOutOfBoundsException e){
+    } catch (IndexOutOfBoundsException e){
         System.out.println("error caught!");
     }
 
@@ -121,6 +130,7 @@ public static void main(String[] args) {
         System.out.println(t.indexOf("cat"));
         t.set(0, "frick");
         System.out.println(t);
+        System.out.println(t.indexOf("frick"));
         System.out.println(t.indexOf("cat"));
         System.out.println(t.indexOf("aaaaaaaa"));
         System.out.println(t.indexOf("naught"));
@@ -141,15 +151,35 @@ public static void main(String[] args) {
         System.out.println(t.toStringDebug());
         System.out.println(t.size());
 
+        System.out.println("~~~~~~~~~");
+        SuperArray zerg = new SuperArray();
+        System.out.println(zerg.size());
+        System.out.println("the following should all throw errors");
+        try{
+            zerg.add(5, "noot");
+        } catch (IndexOutOfBoundsException e){
+            System.out.println("error caught!");
+        }
+
+        try{
+            zerg.add(-5, "zoot");
+        }catch (IndexOutOfBoundsException e){
+            System.out.println("error caught!");
+        }
+        System.out.println("~~~~~~~~~");
+
         System.out.println("");
         System.out.println("testing remove");
         System.out.println(t.toStringDebug());
+        System.out.println("user visible list: " + t);
         System.out.println(t.size());
         t.remove(2);
         System.out.println(t.toStringDebug());
+        System.out.println("user visible list: " + t);
         System.out.println(t.size());
         t.remove(2);
         System.out.println(t.toStringDebug());
+        System.out.println("user visible list: " + t);
         System.out.println(t.size());
 
         System.out.println("");
