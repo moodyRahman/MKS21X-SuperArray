@@ -63,14 +63,14 @@ public String toStringDebug(){
 
 public String get(int index){
         if(index < 0 || index >= size()) {
-                throw new ArrayIndexOutOfBoundsException();
+                throw new IndexOutOfBoundsException();
         }
         return data[index];
 }
 
 public String set(int index, String element){
         if (index < 0 || index >= size()) {
-                throw new ArrayIndexOutOfBoundsException();
+                throw new IndexOutOfBoundsException();
         }
         String output;
         output = data[index];
@@ -119,7 +119,7 @@ public int lastIndexOf(String element){
 
 public void add(int index, String element){
         if (index < 0 || index >= size()) {
-                throw new ArrayIndexOutOfBoundsException();
+                throw new IndexOutOfBoundsException();
         }
         String[] output = new String[size() + 3];
         for (int x = 0; x < index; x++) {  //copies data to output until index
@@ -135,7 +135,7 @@ public void add(int index, String element){
 
 public void remove(int index){
         if (index < 0 || index >= size()) {
-                throw new ArrayIndexOutOfBoundsException();
+                throw new IndexOutOfBoundsException();
         }
         String[] output = new String[size() + 3];
         for (int x = 0; x < index; x++) {  //copies data to output until index
@@ -150,7 +150,7 @@ public void remove(int index){
 public void remove(String element){
         int idx = indexOf(element);
         if (idx < 0 || idx >= size()) {
-                throw new ArrayIndexOutOfBoundsException();
+                throw new IndexOutOfBoundsException();
         }
         remove(idx);
 }
