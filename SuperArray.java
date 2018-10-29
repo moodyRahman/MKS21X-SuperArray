@@ -10,7 +10,7 @@ SuperArray(){
 
 SuperArray(int startCap){
         if (startCap < 0){
-            throw new IndexOutOfBoundsException();
+            throw new IllegalArgumentException();
         }
         data = new String[startCap];
 }
