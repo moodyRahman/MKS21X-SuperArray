@@ -9,6 +9,9 @@ SuperArray(){
 }
 
 SuperArray(int startCap){
+        if (startCap < 0){
+            throw new IndexOutOfBoundsException();
+        }
         data = new String[startCap];
 }
 
