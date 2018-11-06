@@ -186,5 +186,14 @@ public static void main(String[] args) {
         System.out.println("testing remove(string)");
         t.remove("frick");
         System.out.println(t);
+
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+
+        SuperArray esket = new SuperArray();
+        System.out.println(esket.size());
+        esket.add(0, "aaaa");
+        System.out.println(esket);
 }
 }
