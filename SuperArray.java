@@ -121,7 +121,7 @@ public int lastIndexOf(String element){
 }
 
 public void add(int index, String element){
-        if (index < 0 || index >= size()) {
+        if (index < 0 || index > size()) {
                 throw new IndexOutOfBoundsException();
         }
         String[] output = new String[size() + 3];
